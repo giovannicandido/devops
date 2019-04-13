@@ -1,7 +1,7 @@
 FROM fedora
 ENV HELM_VERSION v2.13.1
 COPY kubernetes.repo /etc/yum.repos.d/kubernetes.repo
-RUN dnf install -y ansible kubectl && \
+RUN dnf install -y ansible kubectl jq && \
     dnf clean all
 RUN curl -o helm.tar.gz https://storage.googleapis.com/kubernetes-helm/helm-${HELM_VERSION}-linux-amd64.tar.gz  && \
     tar zxvf helm.tar.gz && \
