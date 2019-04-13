@@ -29,6 +29,7 @@ Tools:
 * Ansible
 * helm
 * jq - Json command line parser
+* git
 
 Random Examples:
 
